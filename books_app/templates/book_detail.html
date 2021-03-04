@@ -24,8 +24,10 @@
     <strong>Author Bio</strong>: {{ book.author.biography }}
 </p>
 
+{% if book.publish_date %}
 <p>
 </p>
+{% endif %}
 
 <p>
     <strong>Audience</strong>: {{ book.audience }}
