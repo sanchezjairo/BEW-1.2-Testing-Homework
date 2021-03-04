@@ -112,8 +112,6 @@ class AuthTests(TestCase):
         self.assertIn("Password doesn&#39;t match. Please try again.", response.get_data(as_text = True))
 
     def test_logout(self):
-        # TODO: Write a test for the logout route. It should:
-        # - Create a user
         create_user()
         
         post_data = {
